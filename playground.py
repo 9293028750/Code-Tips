@@ -1,2 +1,5 @@
-print(11>>1)
-print(11//2)
+import requests
+
+r = requests.get('https://api.github.com/events')
+
+print(r.status_code)
